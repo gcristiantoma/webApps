@@ -10,7 +10,7 @@ import os
 
 
 # Streamlit app title
-st.title("Stock Price Trend and Volume Viewer")
+st.title("Stock Price Trend and Volume Viewer - Aug 2024 , Krakow")
 
 # Alpaca API credentials
 
