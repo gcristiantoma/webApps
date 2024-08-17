@@ -5,17 +5,17 @@ from alpaca.data.requests import StockBarsRequest
 from alpaca.data.timeframe import TimeFrame
 from datetime import datetime, timedelta
 import os
-from dotenv import load_dotenv
-load_dotenv()
+#from dotenv import load_dotenv
+#load_dotenv()
 
 
 # Streamlit app title
 st.title("Stock Price Trend and Volume Viewer")
 
 # Alpaca API credentials
-# Access API credentials from environment variables
-API_KEY = os.getenv('API_KEY')
-API_SECRET = os.getenv('API_SECRET')
+
+API_KEY = st.secrets["API_KEY"]
+API_SECRET = st.secrets["API_SECRET"]
 
 # Debugging: Check if API_KEY and API_SECRET are loaded
 print(f"API_KEY: {API_KEY}")
