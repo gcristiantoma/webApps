@@ -52,8 +52,7 @@ try:
         start=start_date_str
         # end=end_date_str
     )
-    current_price=client.get_stock_latest_quote(symbol)
-    current_price
+ 
     # Fetch historical data
     bars = client.get_stock_bars(request_params)
     bars_df = bars.df
