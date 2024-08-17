@@ -17,10 +17,6 @@ st.title("Stock Price Trend and Volume Viewer - Aug 2024 , Krakow")
 API_KEY = st.secrets["API_KEY"]
 API_SECRET = st.secrets["API_SECRET"]
 
-# Debugging: Check if API_KEY and API_SECRET are loaded
-print(f"API_KEY: {API_KEY}")
-print(f"API_SECRET: {API_SECRET}")
-
 # Initialize the Alpaca SDK Historical Data Client
 client = StockHistoricalDataClient(API_KEY, API_SECRET)
 
