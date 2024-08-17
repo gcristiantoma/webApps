@@ -52,7 +52,7 @@ try:
         start=start_date_str
         # end=end_date_str
     )
-
+    st.write(request_params)
     # Fetch historical data
     bars = client.get_stock_bars(request_params)
     bars_df = bars.df
