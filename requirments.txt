@@ -1,0 +1,7 @@
+streamlit
+alpaca_trade_api
+matplotlib
+alpaca-py
+pandas
+numpy
+python-dotenv
